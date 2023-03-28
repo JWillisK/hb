@@ -1,0 +1,158 @@
+body {
+	background-color: #eee;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+.wrapper {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 50px 20px;
+	background-color: #fff;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+h1 {
+	font-size: 48px;
+	color: #ff0080;
+	margin-bottom: 20px;
+}
+
+.cake {
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.plate {
+	width: 100px;
+	height: 20px;
+	background-color: #b87333;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.layer {
+	width: 100px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.layer-bottom {
+	background-color: #ff8c00;
+}
+
+.layer-middle {
+	background-color: #f0e68c;
+}
+
+.layer-top {
+	background-color: #ffd700;
+}
+
+.icing {
+	width: 80px;
+	height: 80px;
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.candle {
+	width: 10px;
+	height: 80px;
+	background-color: #ff0080;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 120px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.flame {
+	width: 20px;
+	height: 20px;
+	background-color: #ff8c00;
+	border-radius: 50%;
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: flicker 1s infinite;
+}
+
+@keyframes flicker {
+	0% {
+		opacity: 0.5;
+		transform: translateY(-5px);
+	}
+	50% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	100% {
+		opacity: 0.5;
+		transform: translateY(-5px);
+	}
+}
+
+.message {
+	margin-top: 50px;
+}
+
+.fireworks {
+	position: relative;
+	margin-top: 50px;
+}
+
+.firework {
+	width: 10px;
+	height: 10px;
+	background-color: #ff0080;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: fireworks 1s infinite;
+}
+
+.firework:nth-child(1) {
+	animation-delay: 0.1s;
+}
+
+.firework:nth-child(2) {
+	animation-delay: 0.2s;
+}
+
+.firework:nth-child(3) {
+	animation-delay: 0.3s;
+}
+
+.firework:nth-child(4) {
+	animation-delay: 0.4s;
+}
+
+.firework:nth-child(5) {
+	animation-delay: 0.5s;
+}
+
+.firework:nth-child(6) {
+	animation-delay: 0.6s;
+}
+
+.firework:nth-child(7) {
+	animation-delay: 0.7s;
